@@ -8,21 +8,21 @@ There are two types of constructors in C++: **default constructor** and **custom
 > 
 Example of declaration of a default constructor:
 
-> #### `class Cube {`
-> > #### `public:`
-> > > ##### `Cube(): length_(0) {};`
-> > #### `private:`
-> > > ##### `float length_;`
-> #### `};`
+> #### class Cube {
+> > #### public:
+> > > ##### Cube(): length_(0) {};
+> > #### private:
+> > > ##### float length_;
+> #### };
 >
 **Custom constructor**: Like the default constructor, it is a special member function with no return type, but it has one or more parameters.
 The custom constructor is also called a parameter constructor.
 >
 Example of a custom constructor:
-> #### `class Cube {`
-> > #### `public:`
-> > > ##### `Cube(): length_(0) {};`
-> > > ##### `Cube(float l) : length_(l) {}`
-> > #### `private:`
-> > > ##### `float length_;`
-> #### `};`
+> #### class Cube {
+> > #### public:
+> > > ##### Cube(): length_(0) {};
+> > > ##### Cube(float l) : length_(l) {};
+> > #### private:
+> > > ##### float length_;
+> #### };
