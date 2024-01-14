@@ -34,7 +34,7 @@ A custom copy constructor is a special member function that has exactly one para
 
 Example of a custom copy constructor:
 > Cube::Cube(**const** Cube **&** obj);
-### 2.2.1 Copy constructor invocation
+## 2.3 Copy constructor invocation
 Often, the copy constructor is invoked automatically by:
 - Passing an object as the argument
 - Initializing a new object
