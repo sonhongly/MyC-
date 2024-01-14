@@ -29,7 +29,13 @@ A copy constructor is a special member function that exists to make a copy of an
 ![Screenshot from 2024-01-14 17-39-41](https://github.com/sonhongly/MyC-/assets/74746181/63092404-4eda-43fa-9788-60663c69f61a)
 ## 2.1 Automatic copy constructor
 If no custom copy constructor is provided, the compiler will provide the automatic copy constructor for the object which copies attributes from another existing object.
+## 2.2 Custom copy constructor
 A custom copy constructor is a special member function that has exactly one parameter of the same type as the class. Notice that, the parameter must be a **const** **reference**.
 
 Example of a custom copy constructor:
 > Cube::Cube(**const** Cube **&** obj);
+### 2.2.1 Copy constructor invocation
+Often, the copy constructor is invoked automatically by:
+- Passing an object as the argument
+- Initializing a new object
+- Returning an object from a function
