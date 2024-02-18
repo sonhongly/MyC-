@@ -8,7 +8,7 @@ There are two types of constructors in C++: **default constructor** and **custom
 Example of declaration of a default constructor:
 > ###### class Cube {
 > > ###### public:
-> > > ###### Cube(): length_(0) {};
+> > > ###### Cube(): length_(0) {}; // default constructor
 > > ###### private:
 > > > ###### float length_;
 > ###### };
@@ -19,8 +19,8 @@ The custom constructor is also called a parameter constructor.
 Example of a custom constructor:
 > ###### class Cube {
 > > ###### public:
-> > > ###### Cube(): length_(0) {};
-> > > ###### Cube(float l) : length_(l) {};
+> > > ###### Cube(): length_(0) {}; // default constructor
+> > > ###### Cube(float l) : length_(l) {}; // custom constructor or parameterize constructor
 > > ###### private:
 > > > ###### float length_;
 > ###### };
@@ -30,7 +30,7 @@ A copy constructor is a special member function that exists to make a copy of an
 ## 2.1 Automatic copy constructor
 If no custom copy constructor is provided, the compiler will provide the automatic copy constructor for the object which copies attributes from another existing object.
 ## 2.2 Custom copy constructor
-A custom copy constructor is a special member function that has exactly one parameter of the same type as the class. Notice that, the parameter must be a **const** **reference**.
+A custom copy constructor is a special member function with exactly one parameter of the same type as the class. Notice that, the parameter must be a **const** **reference**.
 
 Example of a custom copy constructor:
 > Cube::Cube(**const** Cube **&** obj);
